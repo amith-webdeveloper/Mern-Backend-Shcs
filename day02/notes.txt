@@ -1,0 +1,16 @@
+
+
+# npm init
+(initialise npm and create package.json file)
+
+# learnt about import fs
+
+# learnt about fs.writeFile
+
+# learnt about fs.appendFile
+
+# learnt about fs.rename
+
+# and many more fs methods
+
+# learnt how to make http server
