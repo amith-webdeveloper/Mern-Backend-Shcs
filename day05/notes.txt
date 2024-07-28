@@ -1,0 +1,20 @@
+@ Form handling , Sessions and cookies 
+
+overview of the day
+(we goona learn how to handle backend process forms and make sure data coming from any frontend lib , fw , or templating engines , we still handle it in the backend)
+
+# install cookie-parser
+
+@ session cookie
+(we can store any data in frontend browser and whenever we request in backend the saved frontend data automatically goes to backend)
+(the saved data on frontend is called cookie and session is link between data and backend connection)
+
+// made all modifications in day04 script.js file
+
+
+(the data which send through frontend it is an like blob which is not directly readable so we have to handle to make blob covert to readable)
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}))
+
+these above code convert blob into readable
