@@ -1,0 +1,53 @@
+
+@ topics to learn:
+
+// introduction to express ✔️
+// setting up basic express application ✔️
+// routing ✔️
+// middleware ✔️
+// request and response handling ✔️
+// Error handling
+
+
+
+@ introduction to express
+- (it is npm package and framework)
+- (manages everything from recieving the request and giving the response)
+
+
+
+
+@ setting up basic express application
+cmd to install : npm install express
+
+
+
+
+@ routing we can route in app.get('/' , requesthandler) by this
+
+
+
+
+@ middleware
+(when server requests and we want to perform some actions before request get send to server like a middleman)
+
+(ways to use middleware)
+- using app.use(function(req , res , next){
+    work // 
+    next()
+})
+(next is most usefull it do action after completing the work of middleware if we not write middleware the display tends to be in loading.. and it not know what to work )
+(next is do things after working of middleware)
+
+
+
+
+
+@ request and response handling
+ - (this is basically first we put url in frotend then backend send response through routes , and above exress stuff then the data display on frontend part as simple as that )
+ - (it is just want  in frontend and send in backend and then we get in frontend )
+ - (remember frontend backend frontend)
+
+
+@ error handling
+
