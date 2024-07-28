@@ -1,0 +1,42 @@
+
+topics to cover :
+
+// NPM - node package manager understaning ✔️
+// installing and uninstalling anything basics and advance ✔️
+// understaning node_modules ✔️
+// dependencies ✔️
+// devdependencies ✔️
+// scripts - understaning default scripts PATH and custom scripts ✔️
+
+
+
+@ installing and uninstalling anything basics and advance
+- (to install anything from npm ) use this cmd npm install <package_name>
+- (to uninstall package) use cmd npm uninstall <package_name>
+- (to install package at particular version) use cmd npm install <package_name> @<version>
+
+
+@ node_modules 
+(these node_modules also stores the extra things used for installed packages that may be used by our packages)
+
+@ dependencies
+(these are packages and dependencies of packages)
+
+@ devdependencies
+(packages only used in development and when app is deployed we not use these packages these are mainly used in only development example nodemon , prettier , etc)
+
+
+@ scripts
+
+(cmd : npm <starter> )
+
+(this scripts use to start app or any actions like build , test , etc)
+
+
+
+
+
+
+
+
+
