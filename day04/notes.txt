@@ -6,7 +6,7 @@
 // routing ✔️
 // middleware ✔️
 // request and response handling ✔️
-// Error handling
+// Error handling ✔️
 
 
 
@@ -51,3 +51,12 @@ cmd to install : npm install express
 
 @ error handling
 
+the error in any routes can handle by using app.use
+like 
+app.use(function(err , req , res , next){
+    console.error(err.stack);
+    res.status(500).send("Something Broke!")
+    
+})
+
+it also like middleware 
