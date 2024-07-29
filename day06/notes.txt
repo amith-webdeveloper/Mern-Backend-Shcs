@@ -1,0 +1,42 @@
+topics to learn 
+
+- dynamic routing ✔️
+- how to get data coming from frontend at backend route
+- setting up parsers for form ✔️
+- setting up ejs for ejs pages ✔️
+- setting up public static files ✔️
+
+
+@ setting up parsers for form 
+this stuffs are parsers
+app.use(express.json())   // these are parsers
+app.use(express.urlencoded({extended:true}));
+
+@ setting up ejs for ejs pages
+- install ejs from npm
+- settup ejs as view engine
+- create views name folder create index.ejs file inside install
+- now in app.send replace app.render
+- and in req.render('give file name') of index.ejs
+
+app.use(express.static(path.join(__dirname , 'public')))
+(this line basically joins the current folder path and public folder )
+(and for all request static files are get in in this given path)
+
+@ dynamic routing
+
+(problem is : 
+we want to not change whole route for like routes like
+* /profile/amith/
+* /profile/sagar/
+* /profile/rohit/
+* /profile/abhi/
+
+here the dynamic routing come in the game.
+)
+
+to make dynamic routes
+simply we have to do in '/profile/:names'
+
+to get what is in names use this method req.params this gives object
+ 
