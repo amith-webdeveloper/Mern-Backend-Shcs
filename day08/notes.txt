@@ -1,0 +1,17 @@
+learned about theory part of nosql and database terminologies
+
+database -> collectons -> Document 
+CODE
+
+______________________________________________________________________
+
+
+
+
+CODE                DATABASE
+------------------------------------------------------------------------
+mongoose.connect -> database create 
+model create     -> collection 
+CREATE           -> Document
+
+
