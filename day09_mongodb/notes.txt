@@ -1,0 +1,31 @@
+// topic to learn 
+
+@ mongodb installation 
+@ mongodb connection 
+@ schema 
+@ model 
+@ crud
+
+
+
+@ mongodb installation
+(simply go to there website and seach fro community pack and install )
+
+@ mongodb connection
+(in main.js import mongoose and by syntax mongoose.connect(url) we can connect)
+
+@ schema
+(to define schema import mongoose and by method mongoose.schema u can create schema and in last by using module.exports export it)
+
+@ model 
+(it structur of inputs by user )
+
+@ crud 
+(i performed these operations in app.js go check there)
+- syntaxes are 
+to create model.create
+to read model.find({to get specific data})
+to update model.findOneAndUpdate(findone , update , {new:true})
+to delete model.findOneAndDelete({findone})
+
+
