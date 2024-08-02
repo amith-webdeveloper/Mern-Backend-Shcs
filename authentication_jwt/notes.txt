@@ -1,0 +1,55 @@
+// topic to learn 
+
+1. how to set cookies 
+2. how to use bcrypt for password encryption and decryption
+3. what is jwt and how to store data in jwt and how to extract data from jwt
+
+
+
+@ how to set cookies 
+
+syntax :
+res.cookie('name' , 'cookie')
+
+to read and send cookie have to use middleware :
+app.use(app.use(cookieParser()))
+
+cookieParser is a npm package have to install 
+
+
+
+
+
+@ how to use bcrypt
+
+- encryption:
+syntax:
+ bcrypt.genSalt(10 , function(err , salt){
+        bcrypt.hash("amith1840" , salt , function(err , hash){
+            console.log(hash);
+        })
+     })
+
+     bcrypt.genSalt('length of random string' , function(err , string){
+        bcrypt.hash('plainpassword' , string , function(err , hash){
+
+        })
+     })
+
+- decryption is not possible we can compare the hash and readable password
+
+bcrypt.compare('amith1840' , '$2b$10$A.oV.ZWdNySNAx2ucagIYuYIMZISgzGVz0AIkqjLwzCiN8I7phe4u' , function(err , result){
+    //     console.log(result);
+        
+    // })
+
+bcrypt.compare('plainpassword' , 'hashpassword' , function(err  , result){})
+
+
+
+
+@ jwt 
+
+- install npm package jsonwebtoken 
+
+- jwt takes
