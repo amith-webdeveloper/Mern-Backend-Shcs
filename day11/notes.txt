@@ -1,0 +1,9 @@
+// things to do
+
+mongoose setup 
+write schema
+model 
+usercreate -> password  -> hash
+jwt token -> cookie
+
+login -> token -> decrypt -> email
