@@ -1,0 +1,9 @@
+tasks of the project
+
+@ create user
+@ login and register 
+@ logout
+@ taking posts of user
+@ post creation
+@ post like
+@ post delete
