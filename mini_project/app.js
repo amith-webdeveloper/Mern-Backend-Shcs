@@ -18,6 +18,12 @@ app.get('/login', function (req, res) {
     res.render('login')
 })
 
+app.get('/profile', isLoggedIn, function (req, res) {
+    console.log(req.user);
+    
+    res.render('login')
+})
+
 app.post('/register', async (req, res) => {
     const { email, password, username, name, age } = req.body;
     const user = await userModel.findOne({ email })
@@ -62,7 +68,7 @@ function isLoggedIn(req, res, next) {
     if (req.cookies.token === "") res.send("you must be logged in")
     else {
         const data = jwt.verify(req.cookies.token, 'secret')
-        req.user = data
+        req.user = data;
 
     }
     next()
